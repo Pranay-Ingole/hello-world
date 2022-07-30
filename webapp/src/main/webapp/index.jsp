@@ -1,73 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
+<form action="action_page.php">
+  <div class="container">
+    <h1>Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Management</title>
-    <link rel="stylesheet" href="project.css">
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
 
-</head>
-<body>
-    <h2>Project Management</h2>
-    <table cellpadding="10" cellspacing="2" align="center">
-        <th class="row1">Project Name</th>
-        <tr>
-            <td class="col1">Project Name</td>
-            <td class="col2"><input type="text" name="project name" id="PName" placeholder="project name"></td>
-        </tr>
-        <th class="row1">Assigned to</th>
-        <tr>
-            <td class="col1">Assigned to</td>
-            <td class="col2">
-                <select name="person" id="projectAssigned">
-                    <option value="Er Merry Petision">Er Merry Petision</option>
-                    <option value="Er Deepak Bhusan">Er Deepak Bhusan</option>
-                    <option value="Er Robert Watson">Er Robert Watson</option>
-                </select>
-            </td>
-        </tr>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
 
-        <th class="row1">Start Date</th>
-        <tr>
-            <td class="col1">Start Date</td>
-            <td class="col2"><input type="date" name="Start Date" id="SDate" class="startDate"></td>
-        </tr>
-        <th class="row1">End Date</th>
-        <tr>
-            <td class="col1">End Date</td>
-            <td class="col2"><input type="date" name="End date" id="EDate" class="endDate"></td>
-        </tr>
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+    <hr>
 
-        <th class="row1">Priority</th>
-        <tr>
-            <td class="col1">Priority</td>
-            <td class="col2">
-                <input type="radio" name="priority" id="high" value="High"> High
-                <input type="radio" name="priority" id="average" value="Average"> Average
-                <input type="radio" name="priority" id="low" value="Low"> Low
-            </td>
-        </tr>
-        <th class="row1">Description</th>
-        <tr>
-            <td class="col1">Description</td>
-            <td class="col2"><textarea name="description" id="description" cols="35" rows="4"></textarea></td>
-        </tr>
-        <tr colspan="2" align="center">
-            <td>
-                <button type="submit" class="submit1"  onclick="submitProjectDetails()">Submit</button>
-            </td>
-            <td>
-                <button type="reset" class="reset1" onclick="resetProjectDetails()">Clear</button>
-            </td>
-        </tr>
-        <tr colspan="1" align="center">
-            <td>
-                <button type="reset" class="reset2" onclick="resetProjectDetails()">Clear</button>
-            </td>
-        </tr>
-    </table>
-    <script src="project.js"></script>
-</body>
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
 
-</html>
+  <div class="container signin">
+    <p>Already have an account? <a href="#">Sign in</a>.</p>
+  </div>
+</form>
