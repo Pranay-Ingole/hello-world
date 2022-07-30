@@ -1,64 +1,73 @@
-<Html>  
-<head>   
-<title>  
-Registration Page  
-</title>  
-</head>  
-<body bgcolor="Lightskyblue">  
-<br>  
-<br>  
-<form>  
-  
-<label> Firstname </label>         
-<input type="text" name="firstname" size="15"/> <br> <br>  
-<label> Middlename: </label>     
-<input type="text" name="middlename" size="15"/> <br> <br>  
-<label> Lastname: </label>         
-<input type="text" name="lastname" size="15"/> <br> <br>  
-  
-<label>   
-Course :  
-</label>   
-<select>  
-<option value="Course">Course</option>  
-<option value="BCA">BCA</option>  
-<option value="BBA">BBA</option>  
-<option value="B.Tech">B.Tech</option>  
-<option value="MBA">MBA</option>  
-<option value="MCA">MCA</option>  
-<option value="M.Tech">M.Tech</option>  
-</select>  
-  
-<br>  
-<br>  
-<label>   
-Gender :  
-</label><br>  
-<input type="radio" name="male"/> Male <br>  
-<input type="radio" name="female"/> Female <br>  
-<input type="radio" name="other"/> Other  
-<br>  
-<br>  
-  
-<label>   
-Phone :  
-</label>  
-<input type="text" name="country code"  value="+91" size="2"/>   
-<input type="text" name="phone" size="10"/> <br> <br>  
-Address  
-<br>  
-<textarea cols="80" rows="5" value="address">  
-</textarea>  
-<br> <br>  
-Email:  
-<input type="email" id="email" name="email"/> <br>    
-<br> <br>  
-Password:  
-<input type="Password" id="pass" name="pass"> <br>   
-<br> <br>  
-Re-type password:  
-<input type="Password" id="repass" name="repass"> <br> <br>  
-<input type="button" value="Submit"/>  
-</form>  
-</body>  
-</html>  
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management</title>
+    <link rel="stylesheet" href="project.css">
+
+</head>
+<body>
+    <h2>Project Management</h2>
+    <table cellpadding="10" cellspacing="2" align="center">
+        <th class="row1">Project Name</th>
+        <tr>
+            <td class="col1">Project Name</td>
+            <td class="col2"><input type="text" name="project name" id="PName" placeholder="project name"></td>
+        </tr>
+        <th class="row1">Assigned to</th>
+        <tr>
+            <td class="col1">Assigned to</td>
+            <td class="col2">
+                <select name="person" id="projectAssigned">
+                    <option value="Er Merry Petision">Er Merry Petision</option>
+                    <option value="Er Deepak Bhusan">Er Deepak Bhusan</option>
+                    <option value="Er Robert Watson">Er Robert Watson</option>
+                </select>
+            </td>
+        </tr>
+
+        <th class="row1">Start Date</th>
+        <tr>
+            <td class="col1">Start Date</td>
+            <td class="col2"><input type="date" name="Start Date" id="SDate" class="startDate"></td>
+        </tr>
+        <th class="row1">End Date</th>
+        <tr>
+            <td class="col1">End Date</td>
+            <td class="col2"><input type="date" name="End date" id="EDate" class="endDate"></td>
+        </tr>
+
+        <th class="row1">Priority</th>
+        <tr>
+            <td class="col1">Priority</td>
+            <td class="col2">
+                <input type="radio" name="priority" id="high" value="High"> High
+                <input type="radio" name="priority" id="average" value="Average"> Average
+                <input type="radio" name="priority" id="low" value="Low"> Low
+            </td>
+        </tr>
+        <th class="row1">Description</th>
+        <tr>
+            <td class="col1">Description</td>
+            <td class="col2"><textarea name="description" id="description" cols="35" rows="4"></textarea></td>
+        </tr>
+        <tr colspan="2" align="center">
+            <td>
+                <button type="submit" class="submit1"  onclick="submitProjectDetails()">Submit</button>
+            </td>
+            <td>
+                <button type="reset" class="reset1" onclick="resetProjectDetails()">Clear</button>
+            </td>
+        </tr>
+        <tr colspan="1" align="center">
+            <td>
+                <button type="reset" class="reset2" onclick="resetProjectDetails()">Clear</button>
+            </td>
+        </tr>
+    </table>
+    <script src="project.js"></script>
+</body>
+
+</html>
