@@ -56,11 +56,11 @@ Email:
 Password:  
 <input type="Password" id="pass" name="pass"> <br>   
 <br> <br>  
-Re-type password:  
+Re-enter password:  
 <input type="Password" id="repass" name="repass"> <br> <br>  
 <input type="button" value="Submit"/>  
 </form>  
 </body>  
 </html>
 
---------------------------------------------------------------------------------
+
